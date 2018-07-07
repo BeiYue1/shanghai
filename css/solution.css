@@ -1,0 +1,339 @@
+body{
+	font-family: '仿宋';
+	background-size: 100%;
+	background: url(../img/solution/landscape3.jpg);
+	transition: 1s;
+}
+
+._table a:nth-of-type(2) span {
+    width: 0px;
+}
+._table a:nth-of-type(2):hover span{
+	width: 38px;
+}
+.solution{
+	width: 916px;
+	height: 344px;
+}
+.solution_h3{
+	font-family: '仿宋';
+	padding-left: 310px;
+	transition: 1s;
+}
+.solution_p{
+	font-family: '仿宋';
+	line-height: 74px;
+	text-align: center;
+	color: #a3a4a6;
+	transition: 1s;
+}
+.solution_ul li{
+	float: left;
+	width: 162px;
+	padding-top: 30px;
+	height: 220px;
+	border: 1px solid #8b8c96;
+	margin: 0px 32px 0px 33px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	transition: 1s;
+	cursor: pointer;
+}
+.solution_em{
+	position: absolute;
+	top: 0px;
+	left: -110px;
+	width: 350px;
+	height: 350px;
+	transform-origin: bottom;
+	transform: rotateZ(45deg) translateX(180px);
+	background-color: #aec141;
+	transition: 1s;
+}
+.solution_ul span{
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	font-weight: bold;
+	transition: 1s;
+
+	font-size: 80px;
+}
+._strong{
+	position: absolute;
+	bottom: 60px;
+	left: 0px;
+	color: #333333; 
+	display: block;
+	text-align: center;
+	width: 162px;
+	font-family: '仿宋';
+	transition: 1s;
+	opacity: 0;
+	z-index: 9;
+}
+.solution_ul p{
+	margin-top: 100px;
+	font-size: 22px;
+	font-family: '仿宋';
+	color: white;
+	transition: 1s;
+	text-align: center;
+	width: 162px;
+	position: absolute;
+}
+@keyframes move_top{
+	0%{
+		bottom: -15px
+	}
+	50%{
+		bottom: -20px;
+	}
+	100%{
+		bottom: -15px
+	}
+}
+.solution_ul img{
+	width: 114px;
+	position: absolute;
+	bottom: -20px;
+	left: 25px;
+	transition: 1s;
+}
+.solution_ul li:hover img{
+	animation: move_top 2s 1s infinite;
+}
+.solution_ul div{
+	width: 1px;
+	height: 50px;
+	background-color: white;
+	position: absolute;
+	transform-origin: top;
+}
+.line1{
+	right: 5px;
+	top: 5px;
+	transform: rotateZ(45deg);
+}
+.line2{
+	left: 5px;
+	top: 155px;
+	transform: rotateZ(-135deg);
+}
+#start_up{
+	width: 820px;
+	padding-top: 24px;
+	height: 256px;
+	margin-left: 260px;
+	margin-top: 30px;
+	position: relative;
+	text-align: center;
+	display: none;
+}
+.start_border{
+	float: left;
+	width: 151px;
+	height: 233px;
+	border: 2px solid #484965;
+	position: relative;
+	opacity: 0;
+	transition: 1s;
+}
+._start{
+	width: 151px;
+	height: 233px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #232246;
+	cursor: pointer;
+	opacity: 0;
+	transition: 1s;
+}
+._start span{
+	font-size: 80px;
+	display: block;
+	text-align: center;
+	margin-top: 30px;
+}
+._start div{
+	width: 2px;
+	height: 50px;
+	transform-origin: top;
+	position: absolute;
+	background-color: #7c7b91;
+}
+.line3{
+	top: 5px;
+	right: 5px;
+	transform: rotateZ(45deg);
+}
+.line4{
+	left: 5px;
+	top: 145px;
+	transform: rotateZ(-135deg);
+}
+._start em{
+	font-size: 22px;
+	font-family: '仿宋';
+}
+.start_p{
+	width: 318px;
+	height: 247px;
+	float: left;
+	margin-left: 150px;
+	/*opacity: 0;*/
+}
+.start_p p{
+	line-height: 24px;
+	margin-top: 12px;
+	opacity: 0;
+	transition: 1s;
+}
+.start_a{
+	opacity: 0;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: #010101;
+	background-color: #92a23f;
+	cursor: pointer;
+	margin-top: 60px;
+	position: absolute;
+	top: 170px;
+	z-index: 9;
+	left: 350px;
+}
+.big_radius{
+	opacity: 0;
+	width: 550px;
+	height: 550px;
+	border: 1px solid #51516e;
+	position: absolute;
+	top: -80px;
+	left: 185px;
+	background: url(../img/solution/current-bottle.png) no-repeat center bottom;
+	border-radius: 50%;
+	transform-origin: center;
+	transform: scale(0);
+	transition: 1s;
+}
+._big_img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.small_radius{
+	transition: 1s;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: center;
+	width: 520px;
+	height: 520px;
+	border-radius: 50%;
+	position: absolute;
+	top: -70px;
+	left: 195px;
+	border: 5px solid #434486;
+}
+.all_a{
+	width: 131px;
+	height: 365px;
+	float: right;
+	margin-top: 15px;
+	position: relative;
+}
+.all_a a{
+	opacity: 0;
+	position: absolute;
+	color: #c5b8ce;
+	font-size: 14px;
+}
+.all_a a:nth-of-type(1){
+	left: 12px;
+}
+.all_a a:nth-of-type(2){
+	left: 58px;
+	top: 82px;
+}
+.all_a a:nth-of-type(3){
+	right: 0px;
+	top: 177px;
+}
+.all_a a:nth-of-type(4){
+	top: 270px;
+	left: 58px;
+}
+.all_a a:nth-of-type(5){
+	bottom: 0px;
+	left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+._bottom_a{
+	display: block;
+}
+._click{
+	position: absolute;
+	height: 31px;
+	top: 80px;
+	right: 175px;
+}
+.click_left{
+	width: 16px;
+	height: 31px;
+	float: left;
+	background: url(../img/life_img/a1.png);
+	background-size: 16px 31px;
+	cursor: pointer;
+}
+.click_left:hover{
+	background: url(../img/life_img/a2.png);
+	background-size: 16px 31px;
+}
+.click_right{
+	width: 16px;
+	height: 31px;
+	float: right;
+	background: red;
+	background: url(../img/life_img/a1.png);
+	background-size: 16px 31px;
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+.click_right:hover{
+	background: url(../img/life_img/a2.png);
+	background-size: 16px 31px;
+	transform: rotateY(180deg);
+}
+.click_center{
+	font-size: 12px;
+	font-style: italic;
+	line-height: 31px;
+	padding: 0 25px;
+}

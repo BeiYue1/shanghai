@@ -1,0 +1,52 @@
+body{
+	margin: 0;
+	font-family: Fixedsys,Arial,"宋体";
+	font-size: 14px;
+	color: white;
+	overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	font-weight: normal;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	margin: 0 auto;
+}
+.clearFix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.mark{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 17px;
+	font-size: 12px;
+	background-color: #94a43a;
+	color: #464f28;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+em{
+	font-style: normal;
+}
+strong{
+	font-weight: normal;
+}
+input,
+button{
+	outline: none;
+	margin: 0;
+	padding: 0;
+}

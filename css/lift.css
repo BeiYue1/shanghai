@@ -1,0 +1,113 @@
+body{
+	background: url(../img/life_img/landscape5.jpg);
+}
+._table a:nth-of-type(2):hover span{
+	width: 38px;
+}
+._table a:nth-of-type(2) span{
+	width: 0px;
+}
+._table a:nth-of-type(3) span{
+	width: 38px;
+}
+
+._lift{
+	width: 860px;
+	height: 440px;
+	position: absolute;
+	top: 115px;
+	left: 1500px;
+	transition: 1s;
+	opacity: 0;
+}
+.lift{
+	width: 194px;
+	height: 228px;
+	float: left;
+	position: relative;
+	margin-right: 87px;
+}
+.lift img{
+	width: 148px;
+	height: 228px;
+	transition: 1s;
+	transform: scale(1);
+}
+.lift:hover img{
+	transform: scale(1.1);
+	box-shadow: 0px 0px 15px red;
+}
+.lift_div{
+	display: block;
+	position: absolute;
+	width: 105px;
+	bottom: 47px;
+	right: 0px;
+}
+.lift_div span{
+	color: white;
+	display: block;
+}
+._h3{
+	line-height: 35px;
+	font-size: 20px;
+	white-space: nowrap;
+}
+._lift_p{
+	line-height: 16px;
+	font-size: 12px;
+}
+.lift:nth-of-type(1){
+	margin-top: 71px;
+}
+.lift:nth-of-type(2){
+	margin-top: 134px;
+}
+.lift:nth-of-type(3){
+	margin-top: 92px;
+}
+._bottom{
+	display: none;
+}
+._bottom_a{
+	display: block;
+}
+._click{
+	position: absolute;
+	height: 31px;
+	top: 80px;
+	right: 175px;
+}
+.click_left{
+	width: 16px;
+	height: 31px;
+	float: left;
+	background: url(../img/life_img/a1.png);
+	background-size: 16px 31px;
+	cursor: pointer;
+}
+.click_left:hover{
+	background: url(../img/life_img/a2.png);
+	background-size: 16px 31px;
+}
+.click_right{
+	width: 16px;
+	height: 31px;
+	float: right;
+	background: red;
+	background: url(../img/life_img/a1.png);
+	background-size: 16px 31px;
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+.click_right:hover{
+	background: url(../img/life_img/a2.png);
+	background-size: 16px 31px;
+	transform: rotateY(180deg);
+}
+.click_center{
+	font-size: 12px;
+	font-style: italic;
+	line-height: 31px;
+	padding: 0 25px;
+}

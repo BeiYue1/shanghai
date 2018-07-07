@@ -1,0 +1,138 @@
+body{
+	transition: 1s;
+	background: url(../img/point/landscape5.jpg);
+}
+
+._table{
+	width: 300px;
+}
+._point{
+	width: 1010px;
+	height: 300px;
+	position: absolute;
+	top: -350px;
+	left: 115px;
+	opacity: 0;
+	transition: 1s;
+}
+._point div{
+	float: left;
+	cursor: pointer;
+}
+._point div:nth-of-type(1){
+	margin: 3px 0px;
+}
+._point div:nth-of-type(2){
+	margin: 100px 130px;
+}
+._point_div{
+	width: 249px;
+	height: 200px;
+	position: relative;
+}
+._point_div img{
+	width: 249px;
+}
+.point_p{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 57px;
+	width: 249px;
+	transition: 1s;
+}
+.point_p img{
+	float: left;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 3px solid #9c9c9c;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.point_p span{
+	float: left;
+	color: #a0a0a0;
+	font-size: 12px;
+}
+.point_p em{
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	margin-top: 30px;
+}
+._shade{
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 241px;
+	height: 151px;
+	background-color: rgba(0,0,0,0);
+	transition: 1s;
+}
+._point_div:hover .point_p{
+	bottom:50px;
+}
+._point_div:hover ._shade{
+	background-color: rgba(0,0,0,.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+._bottom_a{
+	display: block;
+}
+._click{
+	position: absolute;
+	height: 31px;
+	top: 80px;
+	right: 175px;
+}
+.click_left{
+	width: 16px;
+	height: 31px;
+	float: left;
+	background: url(../img/life_img/a1.png);
+	background-size: 16px 31px;
+	cursor: pointer;
+}
+.click_left:hover{
+	background: url(../img/life_img/a2.png);
+	background-size: 16px 31px;
+}
+.click_right{
+	width: 16px;
+	height: 31px;
+	float: right;
+	background: red;
+	background: url(../img/life_img/a1.png);
+	background-size: 16px 31px;
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+.click_right:hover{
+	background: url(../img/life_img/a2.png);
+	background-size: 16px 31px;
+	transform: rotateY(180deg);
+}
+.click_center{
+	font-size: 12px;
+	font-style: italic;
+	line-height: 31px;
+	padding: 0 25px;
+}

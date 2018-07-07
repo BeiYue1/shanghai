@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>上海点硕</title>
+<link rel="stylesheet" href="css/clear.css">
+<style>
+	body{
+		background-color: black;
+		overflow-x: hidden;
+	}
+	p{
+		font-size: 12px;
+		text-align: center;
+		color: #5c5c5c;
+		letter-spacing: 20px;
+		margin-top: 260px;
+	}
+	._to{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100px;
+		height: 200px;
+		background: red;
+		z-index: 9;
+	}
+	@keyframes colors{
+		0%{
+			background-color: white;
+			text-shadow: 0 0 0px transparent;
+			color: #5c5c5c;
+		}
+		100%{
+			text-shadow: 0 0 5px red;
+			color: white;
+			background-color: black;
+		}
+	}
+
+	._a{
+		animation: colors 1s 6s linear;
+		-webkit-animation-fill-mode: forwards;
+		-o-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		color: #5c5c5c;
+		text-align: center;
+		background-color: white;
+		border: 3px solid #5c5c5c;
+		text-shadow: 0 0 0px transparent;
+		font-size: 20px;
+	}
+	._div{
+		text-align: center;
+		margin-top: 100px;
+		
+	}
+	._div a{
+		display: inline-block;
+		width: 200px;
+		height: 40px;
+		line-height: 40px;
+		position: relative;
+	}
+	._div span{
+		display: block;
+		position: absolute;
+	}
+	@keyframes aa{
+		0%{
+			width: 0px;
+		}
+		100%{
+			width: 206px;
+		}
+	}
+	
+	._div span:nth-of-type(1){
+		top: -3px;
+		left: -3px;
+		width: 0px;
+		height: 3px;
+		animation: aa 2s linear;
+		animation-fill-mode: forwards;
+		background-color: black;
+	}
+	@keyframes ab{
+		0%{
+			height: 0px;
+		}
+		100%{
+			height: 40px;
+		}
+	}
+	._div span:nth-of-type(2){
+		top: 0px;
+		right: -3px;
+		width: 3px;
+		height: 0px;
+		animation: ab 1s 2s linear;
+		animation-fill-mode: forwards;
+		background-color: black;
+	}
+	@keyframes ac{
+		0%{
+			width: 0px;
+		}
+		100%{
+			width: 203px;
+		}
+	}
+	._div span:nth-of-type(3){
+		bottom: -3px;
+		right: -3px;
+		height:3px;
+		width: 0px;
+		animation: ac 2s 3s linear;
+		animation-fill-mode: forwards;
+		background-color: black;
+	}
+	@keyframes ad{
+		0%{
+			height: 0px;
+		}
+		100%{
+			height: 46px;
+		}
+	}
+	._div span:nth-of-type(4){
+		bottom: -3px;
+		left: -3px;
+		height: 0px;
+		width: 3px;
+		animation: ad 1s 5s linear;
+		animation-fill-mode: forwards;
+		background-color:black;
+	}
+	.head{
+		width: 980px;
+		height: 10px;
+		position: relative;
+		margin-top: 50px;
+	}
+	.span1{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		opacity: 0;
+		background-color: red;
+	}
+	@keyframes oc{
+		0%{
+			opacity: 0;
+			left: 0px;
+		}
+		50%{
+			opacity: 1;
+			left: 485px;
+		}
+		100%{
+			opacity: 0;
+			left: 970px;
+		}
+	}
+	.span1:nth-of-type(1){
+		animation: oc 5s linear infinite;
+		animation-direction: alternate;
+	}
+	.span1:nth-of-type(2){
+		animation: oc 5s 2s linear infinite;
+		animation-direction: alternate;
+	}
+	.span1:nth-of-type(3){
+		animation: oc 5s 4s linear infinite;
+		animation-direction: alternate;
+	}
+	.span1:nth-of-type(4){
+		animation: oc 5s 6s linear infinite;
+		animation-direction: alternate;
+	}
+	.span1:nth-of-type(5){
+		animation: oc 5s 8s linear infinite;
+		animation-direction: alternate;
+	}
+	.span1:nth-of-type(6){
+		animation: oc 5s 102s linear infinite;
+		animation-direction: alternate;
+	}
+	
+	.span{
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		top: 0px;
+		background: red;
+		border-radius: 50%;
+		right: 0px;
+		opacity: 0;
+	}
+	@keyframes rc{
+		0%{
+			opacity: 0;
+			right: 0px;
+		}
+		50%{
+			opacity: 1;
+			right: 485px;
+		}
+		100%{
+			opacity: 0;
+			right: 970px;
+		}
+	}
+	.span2{
+		animation: rc 5s linear infinite;
+		animation-direction: alternate;
+	}
+	.span3{
+		animation: rc 5s 2s linear infinite;
+		animation-direction: alternate;
+	}
+	.span4{
+		animation: rc 5s 4s linear infinite;
+		animation-direction: alternate;
+	}
+	.span5{
+		animation: rc 5s 6s linear infinite;
+		animation-direction: alternate;
+	}
+	.span6{
+		animation: rc 5s 8s linear infinite;
+		animation-direction: alternate;
+	}
+	.span7{
+		animation: rc 5s 10s linear infinite;
+		animation-direction: alternate;
+	}
+	#_top{
+		width: 980px;
+		height: 400px;
+		background: transparent;
+		position: absolute;
+		left: calc(50% - 490px);
+		top: 100px;
+	}
+	
+	#_top div{
+		width: 1px;
+		height: 0px;
+		background: red;
+		display: inline-block;
+		margin-left: 5px;
+		transition: 1s;
+		vertical-align: top;
+	}
+</style>
+</head>
+<body>
+	<div id ="_top" class="wrap"></div>
+	<!-- 随机生成div -->
+	<script type="text/javascript">
+		window.onload = function(){
+			var str = '';
+			var _top = document.getElementById('_top');
+			var divs = _top.getElementsByTagName('div');
+			var times = Math.random()*10;
+			for(var i = 0 ;i < 163 ;i++){
+				str += '<div></div>'
+			}
+			_top.innerHTML = str;
+
+			
+			moves();
+			setInterval(function(){
+				moves();
+			},500);
+
+			function moves(){
+				function randoms(anum){
+					return Math.floor(Math.random()*anum);
+				}
+
+				var brr = [] ;
+				for(var i = 0 ; i < divs.length; i ++ ){
+					var a = randoms(10);
+					brr.push(a)
+				};
+
+				var crr = [] ;
+				for(var i = 0 ; i < divs.length; i ++ ){
+					var a = randoms(30);
+					crr.push(a)
+				};
+
+				var arr = [] ;
+				for(var i = 0 ; i < divs.length; i ++ ){
+					var a = randoms(355);
+					arr.push(a)
+				};
+
+				var _arr = [];
+				for(var i = 0 ; i < divs.length; i ++ ){
+					var a = randoms(255);
+					_arr.push(a)
+				};
+				
+				var _arrs = [];
+				for(var i = 0 ; i < divs.length; i ++ ){
+					var a = randoms(255);
+					_arrs.push(a)
+				};
+
+				var _arra = [];
+				for(var i = 0 ; i < divs.length; i ++ ){
+					var a = randoms(255);
+					_arra.push(a)
+				};
+
+				for(var i = 0 ;i < divs.length ;i ++ ){
+					for(var i = 0 ; i < divs.length; i++){
+						divs[i].style.height = arr[i] + 'px';
+						divs[i].style.background = 'rgb('+ _arr[i] + ','+ _arrs[i] + ',' + _arra[i] +')';
+						divs[i].style.marginLeft = brr[i] + 'px';
+						divs[i].style.marginTop = crr[i] + 'px';
+					}	
+				}
+			}
+		}  
+	</script>
+	<!-- 几个小点飞过的效果 -->
+	<div class="head wrap">
+		<span class="span1"></span>
+		<span class="span1"></span>
+		<span class="span1"></span>
+		<span class="span1"></span>
+		<span class="span1"></span>
+		<span class="span1"></span>
+		
+		
+		<span class="span span2"></span>
+		<span class="span span3"></span>
+		<span class="span span4"></span>
+		<span class="span span5"></span>
+		<span class="span span6"></span>
+		<span class="span span7"></span>
+	</div>
+		
+		<p class="p">
+		点硕,不断推动您的企业成长
+	</p>
+	<div class="_div">
+		<a class="_a" href="html/bir.html">欢迎进入上海点硕
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		
+	</div>
+</body>
+</html>
